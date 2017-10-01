@@ -4,7 +4,7 @@ is-int [![Build Status](https://travis-ci.org/RivalNick/is-int.svg?branch=master
 > Check if a variable is an integer.
 
 ## Install
-```shell
+```bash
 npm install is-int
 ```
 
@@ -12,9 +12,19 @@ npm install is-int
 ```javascript
 var isInt = require('is-int');
 
-isInt(400);	// => true
+isInt(1);	// => true
 
-isInt("hello");	// => true
+isInt(1.1);	// => false
+
+isInt('1');	// => false
+
+isInt('foo');	// => false
+```
+
+## Test
+```bash
+npm install
+npm test
 ```
 
 ## Author
